@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    color: #fff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: url('../img/formulario/estrellas.png') repeat;
+    opacity: 0.5;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    background: rgba(20, 30, 48, 0.7);
+    border-bottom: 1px solid #2c3e50;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.2em;
+    color: #fff;
+    text-shadow: 0 0 10px #00c3ff, 0 0 20px #fff;
+    margin-bottom: 0.5rem;
+}
+
+header img {
+    border-radius: 1rem;
+    box-shadow: 0 0 20px #00c3ff88, 0 0 40px #fff2;
+    max-width: 90vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+div {
+    background: rgba(30, 40, 60, 0.8);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 30px #00c3ff44, 0 0 60px #fff1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 600px;
+}
+
+div ul {
+    list-style: disc inside;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    color: #aeefff;
+    font-size: 1.1rem;
+}
+
+div p {
+    color: #e0e6f7;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+div img {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px #00c3ff55, 0 0 20px #fff1;
+    max-width: 100%;
+}
+
+
+.img-no-effects {
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+form {
+    background: rgba(20, 30, 48, 0.85);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 20px #00c3ff33, 0 0 40px #fff1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+
+form label {
+    color: #aeefff;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+form input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: #222b3a;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0 5px #00c3ff22;
+}
+
+form button {
+    background: linear-gradient(90deg, #00c3ff 0%, #3a7bd5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00c3ff55, 0 0 20px #fff1;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #3a7bd5 0%, #00c3ff 100%);
+}
